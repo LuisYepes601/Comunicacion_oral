@@ -14,8 +14,7 @@
         "principal principal"
         "footer footer";
 }.titulo{
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .encabezado{
