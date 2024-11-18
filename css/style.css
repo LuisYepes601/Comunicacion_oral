@@ -16,11 +16,11 @@
 }
 
 .titulo {
-    font-size: clamp(0.9rem, 3vw, 1.9rem);
+    font-size: clamp(1.3rem, 3vw, 1.9rem);
 }
 
 .nav {
-    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
 }
 
 .sobre_mi_nav {
