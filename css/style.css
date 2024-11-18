@@ -10,37 +10,64 @@
     gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "encabezado encabezado"
-        "principal principal"
-        "footer footer";
-}.titulo{
-    
+    grid-template-areas: "encabezado "
+        "principal "
+        "footer ";
 }
 
-.encabezado{
+.titulo {
+    font-size: clamp(0.9rem, 3vw, 1.9rem);
+}
+
+.nav {
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+}
+
+.sobre_mi_nav {
+    white-space: nowrap;
+}
+
+.encabezado {
     grid-area: encabezado;
     background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    
-}.menu_nav ul{
+
+}
+
+.menu_nav ul {
     list-style: none;
-    display: flex;
     padding: 1rem;
-    flex-wrap: wrap;
-   
+    display: flex;
 
 
-}.menu_nav ul li{
+}
+
+.menu_nav ul li {
     margin-left: 2rem;
-}.menu_nav ul li a {
+}
+
+.menu_nav ul li a {
     text-decoration: none;
-}.principal{
+}
+
+.principal {
     grid-area: principal;
     background-color: bisque;
-}footer{
+}
+
+footer {
     grid-area: footer;
     background-color: black;
+}
+
+@media (max-width: 480px) {
+    .encabezado {
+        flex-direction: column;
+
+    }
+
+    .menu_nav ul {}
 }
