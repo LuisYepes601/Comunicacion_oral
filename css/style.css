@@ -20,12 +20,12 @@
 
 .titulo {
     font-size: clamp(1.3rem, 3vw, 1.9rem);
-    color: white;
+    color: #0D47A1 ;
 }
 
 .nav {
     font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-    color: white;
+    color: #0D47A1;
     font-weight: 600;
 }
 
@@ -70,6 +70,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-radius: 10px;
+    
 }
 
 footer {
