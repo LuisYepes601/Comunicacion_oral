@@ -4,10 +4,14 @@
     box-sizing: border-box;
     font-family: roboto;
 }
-
+:root{
+    --color-header : #78B3CE;
+    --color_principal: #C9E6F0;
+    --color_secundario:#FBF8EF;
+}
 .contenido {
     display: grid;
-    gap: 1rem;
+   
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "encabezado "
@@ -21,6 +25,8 @@
 
 .nav {
     font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    color: black;
+    font-weight: 600;
 }
 
 .sobre_mi_nav {
@@ -29,7 +35,7 @@
 
 .encabezado {
     grid-area: encabezado;
-    background-color: aqua;
+    background-color: var(--color-header);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,21 +61,30 @@
 
 .principal {
     grid-area: principal;
-    background-color: bisque;
+    background-color: var(--color_secundario);
     padding: 1rem 2rem 0 2rem;
+}iframe{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 footer {
     grid-area: footer;
     background-color: black;
-    color: white;
+   color: white;
     display: flex;
     flex-direction: column;
-}.nav_footer{
+    padding: 2rem 0 1rem 1rem;
+}
+
+.nav_footer {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-}.nav_footer a{
+}
+
+.nav_footer a {
     text-decoration: none;
     color: white;
 }
