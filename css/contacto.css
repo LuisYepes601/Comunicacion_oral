@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+:root {
+    --color-header: #78B3CE;
+    --color_principal: #C9E6F0;
+    --color_secundario: #FBF8EF;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "encabezado "
+        "principal "
+        "footer ";
+}
+
+.titulo {
+    font-size: clamp(1.3rem, 3vw, 1.9rem);
+    color: #0D47A1;
+}
+
+.nav {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    color: #0D47A1;
+    font-weight: 600;
+}
+
+.sobre_mi_nav {
+    white-space: nowrap;
+}
+
+.encabezado {
+    grid-area: encabezado;
+    background-color: var(--color-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.menu_nav ul {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+
+
+}
+
+.principal {
+    display: flex;
+    grid-area: principal;
+    background-color: var(--color_secundario);
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_nav ul li {
+    margin-left: 2rem;
+}
+
+.menu_nav ul li a {
+    text-decoration: none;
+}
+
+.redes_sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.email p {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 0 .5rem 0;
+}
+
+.email p img {
+    max-width: 2rem;
+}
+
+.lista_email a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.lista_email li {
+    list-style: none;
+}
+
+.lista_wpp a {
+    text-decoration: none;
+}
+
+.git a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+    gap: .5rem;
+    color: black;
+}
+
+.github_logo {
+    font-size: 2rem;
+
+}
+
+.git p {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 0 .5rem 0;
+
+}.ventana{
+    font-size: 1rem;
+    
+}
+
+.wpp i {
+    font-size: 2rem;
+}
+
+.wpp p {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+    color: green;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 1rem 1rem;
+}
+
+.nav_footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav_footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .encabezado {
+        flex-direction: column;
+
+    }
+
+
+}
