@@ -66,13 +66,19 @@
     grid-area: principal;
     background-color: var(--color_secundario);
     padding: 1rem 2rem 0 2rem;
+}.introduccion img{
+    width: 100%;
+    max-width: 400px;
 }iframe{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-radius: 10px;
     
 }
+.recursos_nav{
+    text-decoration: none;
 
+}
 footer {
     grid-area: footer;
     background-color: black;
