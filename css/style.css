@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    flex-wrap: wrap;
+    
 }.menu_nav ul{
     list-style: none;
     display: flex;
