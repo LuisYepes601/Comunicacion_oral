@@ -83,6 +83,8 @@ align-items: center;
     overflow: hidden;
     border-radius: 10px;
     
+}.recursos{
+    padding: 2rem 0;
 }
 .recursos_nav{
     text-decoration: none;
