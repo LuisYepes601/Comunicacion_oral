@@ -210,9 +210,11 @@ footer {
 
 .redes {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
 }
 
 .email img {
@@ -223,31 +225,40 @@ footer {
     gap: 1rem;
     color: white;
     text-decoration: none;
-}.wap_footer{
+}
+
+.wap_footer {
     display: flex;
     gap: 1rem;
     align-items: center;
     color: white;
     text-decoration: none;
-}.logo_wpp_footer{
+}
+
+.logo_wpp_footer {
     font-size: 2.3rem;
-}.link_git_footer{
+}
+
+.link_git_footer {
     display: flex;
     align-items: center;
     gap: .5rem;
     text-decoration: none;
+    color: white;
 }
 
 @media (max-width: 480px) {
     .encabezado {
         flex-direction: column;
 
-    }footer{
+    }
+
+    footer {
         flex-direction: column;
         gap: 2rem;
     }
 
-    
+
 
 
 }

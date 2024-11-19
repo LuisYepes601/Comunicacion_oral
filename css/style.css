@@ -4,11 +4,13 @@
     box-sizing: border-box;
     font-family: roboto;
 }
-:root{
-    --color-header : #78B3CE;
+
+:root {
+    --color-header: #78B3CE;
     --color_principal: #C9E6F0;
-    --color_secundario:#FBF8EF;
+    --color_secundario: #FBF8EF;
 }
+
 .contenido {
     display: grid;
     grid-template-columns: 1fr;
@@ -20,7 +22,7 @@
 
 .titulo {
     font-size: clamp(1.3rem, 3vw, 1.9rem);
-    color: #0D47A1 ;
+    color: #0D47A1;
 }
 
 .nav {
@@ -68,34 +70,46 @@
     padding: 1rem 2rem 0 2rem;
 
 
-}.introduccion{
-display: flex;
-flex-direction: column;
-align-items: center;
-}.introduccion img{
+}
+
+.introduccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduccion img {
     width: 100%;
     max-width: 400px;
-  
 
-    
-}iframe{
+
+
+}
+
+iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-radius: 10px;
-    
-}.recursos{
+
+}
+
+.recursos {
     padding: 2rem 0;
 }
-.recursos_nav{
+
+.recursos_nav {
     text-decoration: none;
 
 }
+
 footer {
     grid-area: footer;
     background-color: black;
-   color: white;
+    color: white;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 2rem 0 1rem 1rem;
 }
 
@@ -110,11 +124,59 @@ footer {
     color: white;
 }
 
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.email img {
+    max-width: 40px;
+}
+
+.email {
+    gap: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.wap_footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.logo_wpp_footer {
+    font-size: 2.3rem;
+}
+
+.link_git_footer {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: white;
+}
+
 @media (max-width: 480px) {
     .encabezado {
         flex-direction: column;
 
     }
 
-    .menu_nav ul {}
+    footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
