@@ -237,6 +237,7 @@ footer {
 
 .logo_wpp_footer {
     font-size: 2.3rem;
+    
 }
 
 .link_git_footer {
@@ -245,6 +246,9 @@ footer {
     gap: .5rem;
     text-decoration: none;
     color: white;
+    
+}.github_logo{
+    margin-right: 1rem;
 }
 
 @media (max-width: 480px) {
