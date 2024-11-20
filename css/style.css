@@ -62,6 +62,14 @@
 
 .menu_nav ul li a {
     text-decoration: none;
+    transition: color .5s , font-size .7s;
+    padding: .2rem;
+}
+
+.menu_nav ul li a:hover {
+    color: white;
+    font-size: 1.8rem;
+
 }
 
 .principal {
@@ -100,6 +108,28 @@ iframe {
 .recursos_nav {
     text-decoration: none;
 
+}.contactame{
+    
+    position: fixed;
+    top: 80%;
+    right: 2%;
+    z-index: 1000;
+}.contactame a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: all .5s;
+    
+}.contactame a:hover{
+    color: #0D47A1;
+    font-size: 1.5rem;
+    
+}.contactame a i {
+    color:#25D366;
+    font-weight: 900;
+    font-size: 3rem;
+}.contactame p{
+    font-weight: 900;
 }
 
 footer {
@@ -167,8 +197,10 @@ footer {
     gap: .5rem;
     text-decoration: none;
     color: white;
-    
-}.github_logo{
+
+}
+
+.github_logo {
     font-size: 2rem;
     margin-right: 1rem;
 }

@@ -53,22 +53,12 @@
     padding: 1rem;
     display: flex;
 
-
-}
-
-.principal {
-    display: flex;
-    grid-area: principal;
-    background-color: var(--color_secundario);
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
 }
 
 .menu_nav ul li a {
     text-decoration: none;
-    transition: color .5s , font-size .7s;
     padding: 1rem;
+    transition: color .5s , font-size .7s;
 }
 
 .menu_nav ul li a:hover {
@@ -77,111 +67,41 @@
 
 }
 
-.redes_sociales {
+.principal {
+    grid-area: principal;
+    background-color: var(--color_secundario);
+    padding: 1rem 4rem 0 4rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+
 }
 
-
-.email_principal p {
+.estrategias {
+    padding: 0 0 5rem 0;
+}.contactame{
+    
+    position: fixed;
+    top: 80%;
+    right: 2%;
+    z-index: 1000;
+}.contactame a {
     display: flex;
-    justify-content: start;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 0 0 .5rem 0;
-}
-
-.email_principal p img {
-    max-width: 2rem;
-}
-
-.lista_email a {
+    flex-direction: column;
     text-decoration: none;
-    color: black;
-    transition: color 0.5s ease, transform 0.3s ease, font-size 0.5s;
-
-}
-
-.lista_email a:hover {
+    transition: all .5s;
+    
+}.contactame a:hover{
     color: #0D47A1;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    
+}.contactame a i {
+    color:#25D366;
+    font-weight: 900;
+    font-size: 3rem;
+}.contactame p{
+    font-weight: 900;
 }
 
-.lista_email li {
-    list-style: none;
-}
-
-.lista_wpp a {
-    text-decoration: none;
-}
-
-.git a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-top: .5rem;
-    gap: .5rem;
-    color: black;
-    transition: color 0.5s ease, transform 0.3s ease, font-size 0.5s;
-
-}
-
-.git a:hover {
-    color: #0D47A1;
-    font-size: 1.2rem;
-}
-
-.github_logo {
-    font-size: 2rem;
-
-}
-
-.git p {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: start;
-    align-items: center;
-    gap: .5rem;
-    padding: 0 0 .5rem 0;
-
-}
-
-.ventana {
-    font-size: 1rem;
-
-}
-
-.wpp i {
-    font-size: 2rem;
-}
-
-.wpp p {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: start;
-    align-items: center;
-    gap: .5rem;
-    color: green;
-    margin-bottom: .5rem;
-}
-
-.wpp li {
-    list-style: none;
-
-
-}
-
-.wpp a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.5s ease, transform 0.3s ease, font-size 0.5s;
-}
-
-.wpp a:hover {
-    color: #0D47A1;
-    font-size: 1.2rem;
-}
 
 
 footer {
@@ -241,7 +161,7 @@ footer {
 
 .logo_wpp_footer {
     font-size: 2.3rem;
-    
+
 }
 
 .link_git_footer {
@@ -250,9 +170,12 @@ footer {
     gap: .5rem;
     text-decoration: none;
     color: white;
-    
-}.github_logo{
+
+}
+
+.github_logo {
     margin-right: 1rem;
+    font-size: 2rem;
 }
 
 @media (max-width: 480px) {
