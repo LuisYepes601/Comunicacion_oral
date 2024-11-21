@@ -189,6 +189,22 @@ footer {
         gap: 2rem;
     }
 
+    @media (max-width: 768px) and (prefers-reduced-motion: reduce) {
+
+        *{
+            animation: none !important;
+            transition: none !important;
+        }
+        .menu_nav ul li a:hover {
+            color: #0D47A1 !important;
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem) !important;
+        }
+    
+        .contactame a:hover {
+            color: inherit !important;
+            font-size: inherit !important;
+        }
+    }
 
 
 

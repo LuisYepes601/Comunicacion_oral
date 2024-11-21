@@ -62,7 +62,7 @@
 
 .menu_nav ul li a {
     text-decoration: none;
-    transition: color .5s , font-size .7s;
+    transition: color .5s, font-size .7s;
     padding: .2rem;
 }
 
@@ -108,27 +108,37 @@ iframe {
 .recursos_nav {
     text-decoration: none;
 
-}.contactame{
-    
+}
+
+.contactame {
+
     position: fixed;
     top: 80%;
     right: 2%;
     z-index: 1000;
-}.contactame a {
+}
+
+.contactame a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     transition: all .5s;
-    
-}.contactame a:hover{
+
+}
+
+.contactame a:hover {
     color: #0D47A1;
     font-size: 1.5rem;
-    
-}.contactame a i {
-    color:#25D366;
+
+}
+
+.contactame a i {
+    color: #25D366;
     font-weight: 900;
     font-size: 3rem;
-}.contactame p{
+}
+
+.contactame p {
     font-weight: 900;
 }
 
@@ -214,5 +224,22 @@ footer {
     footer {
         flex-direction: column;
         gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) and (prefers-reduced-motion: reduce) {
+
+    *{
+        animation: none !important;
+        transition: none !important;
+    }
+    .menu_nav ul li a:hover {
+        color: #0D47A1 !important;
+        font-size: clamp(1.1rem, 2.5vw, 1.3rem) !important;
+    }
+
+    .contactame a:hover {
+        color: inherit !important;
+        font-size: inherit !important;
     }
 }
